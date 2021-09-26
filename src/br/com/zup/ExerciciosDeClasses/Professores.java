@@ -49,9 +49,15 @@ public class Professores extends Funcionarios {
     }
 
     //Método para aumento de salário
-    public double aumentoSalario(){
+    public double aumentoSalario() {
         double vlrAumento = getSalario() * 0.10;
         return getSalario() + vlrAumento;
+    }
+
+    //Método para inclusão de turma
+    public int turmas() {
+        int novasTurmas = qtdTurmas + 1;
+        return novasTurmas;
     }
 
 }
