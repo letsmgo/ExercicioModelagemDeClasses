@@ -7,10 +7,6 @@ public class Professores extends Funcionarios {
     private int qtdTurmas;
 
     //Método construtor
-    public Professores() {
-
-    }
-
     public Professores(String nome, String cpf, double numRegistro, String orgaoLotacao, double salario, String nivelDeGraduacao, String disciplinaMinistrada, int qtdAlunos, int qtdTurmas) {
         super(nome, cpf, numRegistro, orgaoLotacao, salario);
         this.nivelDeGraduacao = nivelDeGraduacao;
@@ -50,6 +46,12 @@ public class Professores extends Funcionarios {
 
     public void setQtdTurmas(int qtdTurmas) {
         this.qtdTurmas = qtdTurmas;
+    }
+
+    //Método para aumento de salário
+    public double aumentoSalario(){
+        double vlrAumento = getSalario() * 0.10;
+        return getSalario() + vlrAumento;
     }
 
 }

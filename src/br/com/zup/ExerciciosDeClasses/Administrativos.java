@@ -5,10 +5,6 @@ public class Administrativos extends Funcionarios {
     private String senioridade;
 
     //Método construtor
-    public Administrativos() {
-
-    }
-
     public Administrativos(String nome, String cpf, double numRegistro, String orgaoLotacao, double salario, String funcaoAdm, String senioridade) {
         super(nome, cpf, numRegistro, orgaoLotacao, salario);
         this.funcaoAdm = funcaoAdm;
@@ -30,6 +26,12 @@ public class Administrativos extends Funcionarios {
 
     public void setSenioridade(String senioridade) {
         this.senioridade = senioridade;
+    }
+
+    //Método aumento de salário
+    public double aumentoSalario(){
+        double vlrAumento = getSalario() * 0.10;
+        return getSalario() + vlrAumento;
     }
 
 }
