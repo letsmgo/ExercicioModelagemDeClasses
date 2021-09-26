@@ -11,7 +11,6 @@ public class Turma {
     }
 
     //Getters and Setters
-
     public int getQtdAlunos() {
         return qtdAlunos;
     }
@@ -27,6 +26,5 @@ public class Turma {
     public void setSemestre(String semestre) {
         this.semestre = semestre;
     }
-
 
 }
