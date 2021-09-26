@@ -17,5 +17,16 @@ public class Coordenadores extends Funcionarios{
         return getSalario() + aumento;
     }
 
+    //Método para adicionar professores
+    public void adicionarProfessor(Professores prof){
+        profsSupervisionados.add(prof);
+    }
+
+    public void exibirProfessores(){
+        for (Professores referencia : profsSupervisionados) {
+            System.out.println("O nome do professor é : " + referencia.getNome());
+        }
+    }
+
 
 }
