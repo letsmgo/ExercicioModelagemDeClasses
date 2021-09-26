@@ -13,6 +13,14 @@ public class Coordenadores extends Funcionarios{
         this.profsSupervisionados = profsSupervisionados;
     }
 
+    //Getters and Setters
 
+    public String getProfsSupervisionados() {
+        return profsSupervisionados;
+    }
+
+    public void setProfsSupervisionados(String profsSupervisionados) {
+        this.profsSupervisionados = profsSupervisionados;
+    }
 
 }
