@@ -9,9 +9,10 @@ public class Funcionarios {
     private double salario;
 
     //Método construtor
-    public Funcionarios(){
+    public Funcionarios() {
 
     }
+
     public Funcionarios(String nome, String cpf, double numRegistro, String orgaoLotacao, double salario) {
         this.nome = nome;
         this.cpf = cpf;
@@ -60,4 +61,5 @@ public class Funcionarios {
     public void setSalario(double salario) {
         this.salario = salario;
     }
+
 }
