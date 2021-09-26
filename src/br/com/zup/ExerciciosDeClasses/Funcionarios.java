@@ -20,4 +20,44 @@ public class Funcionarios {
         this.salario = salario;
     }
 
+    //Getters and Setters
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public double getNumRegistro() {
+        return numRegistro;
+    }
+
+    public void setNumRegistro(double numRegistro) {
+        this.numRegistro = numRegistro;
+    }
+
+    public String getOrgaoLotacao() {
+        return orgaoLotacao;
+    }
+
+    public void setOrgaoLotacao(String orgaoLotacao) {
+        this.orgaoLotacao = orgaoLotacao;
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
 }
