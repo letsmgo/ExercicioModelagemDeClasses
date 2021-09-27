@@ -5,6 +5,7 @@ public class Professores extends Funcionarios {
     private String disciplinaMinistrada;
     private int qtdAlunos;
     private int qtdTurmas;
+    public Turma turma;
 
     //Método construtor
     public Professores(String nome, String cpf, double numRegistro, String orgaoLotacao, double salario, String nivelDeGraduacao, String disciplinaMinistrada, int qtdAlunos, int qtdTurmas) {
@@ -48,6 +49,14 @@ public class Professores extends Funcionarios {
         this.qtdTurmas = qtdTurmas;
     }
 
+    //Getters and Setters da classe turma
+    public Turma getTurma(){
+        return turma;
+    }
+    public void setTurma(Turma turma){
+        this.turma = turma;
+    }
+
     //Método para aumento de salário
     public double aumentoSalario() {
         double vlrAumento = getSalario() * 0.10;
@@ -58,6 +67,19 @@ public class Professores extends Funcionarios {
     public int turmas() {
         int novasTurmas = qtdTurmas + 1;
         return novasTurmas;
+    }
+
+    //Método para inclusão de alunos na turma
+    public void adicionarAlunos(Turma turma){
+        qtdAlunos = qtdAlunos + turma.getQtdAlunos();
+    }
+
+    public String quantidadeAlunos(){
+        return "Quantidade de Alunos: " + qtdAlunos;
+    }
+
+    public void addTurma(Turma turmaAdicionada){
+        turma = turmaAdicionada;
     }
 
 }
