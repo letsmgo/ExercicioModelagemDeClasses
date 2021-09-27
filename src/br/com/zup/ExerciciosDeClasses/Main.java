@@ -5,6 +5,7 @@ public class Main {
         Coordenadores coordenador = new Coordenadores("Maga Alonso", "999", 111, "012", 12000);
         Professores professor1 = new Professores("André", "888", 100, "011", 16000, "Mestre", "Java", 25, 2);
         Professores professor2 = new Professores("Vinicius","666",98,"098",16000,"Mestre","JavaScript",25,2);
+        Professores professor3 = new Professores("Fellipe","555",97,"097",16000,"Doutor","Sprint",25,2);
         Administrativos adm1 = new Administrativos("Eliseu", "777", 99, "099", 14000, "Head", "Sênior");
         Turma turma1 = new Turma(25,"Primeiro semestre");
         Turma turma2 = new Turma(25,"Segundo semestre");
@@ -15,18 +16,21 @@ public class Main {
         System.out.println("Salário atual: R$" + coordenador.getSalario());
         System.out.println("Salário após aumento de 5%: R$" + coordenador.aumentoSalario() + "\n");
 
-        //Funcionalidade adicionando professores
+        /*
+        Funcionalidade adicionando professores
         coordenador.adicionarProfessor(professor1);
         coordenador.adicionarProfessor(professor2);
         coordenador.exibirProfessores();
 
+         */
 
         //Funcionalidade Aumento de salario Professor
         System.out.println("Professor " + professor1.getNome() + ", ministra aulas de " + professor1.getDisciplinaMinistrada());
         System.out.println("Salário atual é: R$" + professor1.getSalario());
         System.out.println("Salário após aumento de 10% é: R$" + professor1.aumentoSalario());
 
-        //Funcionalidade adicionar turma
+        /*
+        Funcionalidade adicionar turma
         System.out.println("O professor André está com " + professor1.getQtdTurmas() + " turmas.");
         System.out.println("No novo semestre, terá " + professor1.turmas() + " turmas.\n");
 
@@ -36,10 +40,13 @@ public class Main {
         System.out.println("Ele está com " + professor2.getQtdTurmas() + " turmas.");
         System.out.println("No novo semestre, terá " + professor2.turmas() + " turmas.\n");
 
+         */
+
         //Funcionalidade aumento de salario Adm's
         System.out.println("Nome do Administrador: " + adm1.getNome());
         System.out.println("Salário atual é: R$" + adm1.getSalario());
         System.out.println("Salário após o aumento de 10% é: R$" + adm1.aumentoSalario() + "\n");
+
 
         //Testando funcionalidades da classe turma como característica da classe professores
 
@@ -53,7 +60,20 @@ public class Main {
         professor2.adicionarAlunos(turma2);
         System.out.println(professor2.quantidadeAlunos());
         System.out.println(turma2.getQtdAlunos());
-        System.out.println(turma2.getSemestre());
+        System.out.println(turma2.getSemestre() + "\n");
+
+
+        //Testando funcionalidade do adicionar professor com Vetor
+        coordenador.addProfesssores(professor1);
+        System.out.println("Lista de professores cadastrados: ");
+        coordenador.exibirProf();
+        coordenador.addProfesssores(professor2);
+        System.out.println("Lista de professores cadastrados: ");
+        coordenador.exibirProf();
+        coordenador.addProfesssores(professor3);
+        System.out.println("Lista de professores cadastrados: ");
+        coordenador.exibirProf();
+
 
     }
 }
